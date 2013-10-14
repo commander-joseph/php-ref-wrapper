@@ -1,5 +1,5 @@
 {
-    "name": "php-ref-wrapper",
+    "name": "php-ref-wrapper/php-ref-wrapper",
     "license": "AFFERO",
     "type": "project",
     "autoload": {
