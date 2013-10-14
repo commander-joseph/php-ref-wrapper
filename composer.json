@@ -1,0 +1,25 @@
+{
+    "name": "php-ref-wrapper",
+    "license": "AFFERO",
+    "type": "project",
+    "autoload": {
+        "psr-0": { 
+        	"": "src/"
+        },
+        "files": [
+	      	"lib/php-ref/ref.php"
+        ]
+    },
+    "scripts": {
+    	"post-install-cmd": [
+    		"(mkdir -p lib ; rm -rf lib/php-ref ; cd lib ; git clone git@github.com:digitalnature/php-ref.git php-ref) > /dev/null"
+    	]
+    },
+    "require": {
+        "php": ">=5.5"
+    },
+    "config": {
+        "process-timeout": 10000
+    },
+    "minimum-stability": "stable"
+}
